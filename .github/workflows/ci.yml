@@ -25,6 +25,7 @@ jobs:
       run: npm i pnpm@latest -g
     - name: install dependencies
       run: | 
+        pnpm install
         pnpx turbo run build
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4.3.3
