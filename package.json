@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/sudongyuer/learn-eslint#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.23.0"
+    "@changesets/cli": "^2.23.0",
+    "turbo": "^1.2.16"
   }
 }
