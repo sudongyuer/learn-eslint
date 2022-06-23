@@ -32,4 +32,4 @@ jobs:
       with:
         token: ${{ secrets.ACCESS_TOKEN }}
         branch: gh-pages-deploy
-        folder: /packages/learn-eslint-doc/docs/.vitepress/dist
+        folder: packages/learn-eslint-doc/docs/.vitepress/dist
