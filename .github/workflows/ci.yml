@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - master
+env:
+  CI: true
+  PNPM_CACHE_FOLDER: .pnpm-store
+
 permissions: 
   contents: write
 jobs:
@@ -21,11 +25,10 @@ jobs:
       run: npm i pnpm@latest -g
     - name: install dependencies
       run: | 
-        pnpm install
-        pnpm run docs:build
+        pnpx turbo run build
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
         token: ${{ secrets.ACCESS_TOKEN }}
         branch: gh-pages-deploy
-        folder: docs/.vitepress/dist
+        folder: /packages/docs/learn-eslint-doc/.vitepress/dist
