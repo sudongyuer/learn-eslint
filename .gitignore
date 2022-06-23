@@ -1,0 +1,9 @@
+node_modules
+dist
+.pnpm-debug.log
+.DS_Store
+.idea
+.turbo
+dist/**
+build/**
+.next/**
