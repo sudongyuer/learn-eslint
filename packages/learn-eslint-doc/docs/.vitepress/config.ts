@@ -30,7 +30,7 @@ export default defineConfig({
     ],
     sidebar: {
       '/guide/': getGuideSidebar(),
-      '/': getGuideSidebar()
+      '/': getGuideSidebar(),
     }
   }
 })
@@ -39,7 +39,7 @@ function getGuideSidebar() {
   return [
     {
       text: '小册简介🍁',
-       link:'../guide/小册简介'
+       link:'/packages/learn-eslint-doc/docs/guide/guide/小册简介'
     },
     {
       text: '初识Eslint',
