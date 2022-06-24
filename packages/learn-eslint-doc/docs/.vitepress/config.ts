@@ -21,7 +21,7 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Start', link: '/guide', activeMatch: '^/$|^/guide/' },
+      { text: 'Start', link: '/', activeMatch: '^/$|^/guide/' },
       {
         text: 'About ME',
         link: 'https://github.com/sudongyuer'
@@ -38,11 +38,11 @@ function getGuideSidebar() {
   return [
     {
       text: '小册简介🍁',
-       link:'../guide/小册简介'
+       link:'/guide/小册简介'
     },
     {
       text: '初识Eslint',
-       link:'../guide/初识Eslint'
+       link:'/guide/初识Eslint'
     }
   ]
 }
