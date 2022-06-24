@@ -6,7 +6,6 @@ export default defineConfig({
   description: 'Eslint 0-1',
   lastUpdated: true,
   base:"/learn-eslint/",
-
   themeConfig: {
     repo: 'sudongyuer/learn-eslint',
     docsDir: 'docs',
@@ -22,15 +21,15 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Start', link: '/'},
+      { text: 'Start', link: '/guide', activeMatch: '^/$|^/guide/' },
       {
         text: 'About ME',
         link: 'https://github.com/sudongyuer'
       }
     ],
     sidebar: {
-      '/learn-eslint/': getGuideSidebar(),
       '/': getGuideSidebar(),
+      '/learn-eslint/': getGuideSidebar(),
     }
   }
 })
