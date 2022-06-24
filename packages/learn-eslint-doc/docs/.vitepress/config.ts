@@ -38,8 +38,12 @@ export default defineConfig({
 function getGuideSidebar() {
   return [
     {
-      text: '开始学习Eslint吧～',
-       link:''
+      text: '小册简介🍁',
+       link:'../guide/小册简介'
     },
+    {
+      text: '初始化ESlint',
+       link:''
+    }
   ]
 }
