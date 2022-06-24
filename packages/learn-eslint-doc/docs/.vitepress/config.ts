@@ -22,14 +22,14 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Start', link: '/guide', activeMatch: '^/$|^/guide/' },
+      { text: 'Start', link: '/'},
       {
         text: 'About ME',
         link: 'https://github.com/sudongyuer'
       }
     ],
     sidebar: {
-      '/guide/': getGuideSidebar(),
+      '/learn-eslint/': getGuideSidebar(),
       '/': getGuideSidebar(),
     }
   }
