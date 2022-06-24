@@ -42,8 +42,8 @@ function getGuideSidebar() {
        link:'../guide/小册简介'
     },
     {
-      text: '初始化ESlint',
-       link:''
+      text: '初识Eslint',
+       link:'../guide/初识Eslint'
     }
   ]
 }
