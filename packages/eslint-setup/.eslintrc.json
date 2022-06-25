@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    // "extends": "eslint:recommended",
+    "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": "latest"
     },
@@ -11,18 +11,18 @@
         "indent":[
             "error",
             2
+        ],
+        "linebreak-style":[
+            "error",
+            "unix"
+        ],
+        "quotes":[
+            "error",
+            "single"
+        ],
+        "semi":[
+            "error",
+            "always"
         ]
-        // "linebreak-style":[
-        //     "error",
-        //     "unix"
-        // ],
-        // "quotes":[
-        //     "error",
-        //     "single"
-        // ],
-        // "semi":[
-        //     "error",
-        //     "always"
-        // ]
     }
 }
