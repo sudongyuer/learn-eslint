@@ -43,6 +43,10 @@ function getGuideSidebar() {
     {
       text: '初识Eslint',
        link:'/guide/初识Eslint'
+    },
+    {
+      text: '初始化Eslint',
+       link:'/guide/初始化Eslint'
     }
   ]
 }
