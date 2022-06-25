@@ -4,5 +4,4 @@ function checkPositive(number) {
   }
   return false;
 }
-
 checkPositive(10);
