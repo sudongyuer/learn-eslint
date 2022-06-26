@@ -47,6 +47,10 @@ function getGuideSidebar() {
     {
       text: '初始化Eslint',
        link:'/guide/初始化Eslint'
+    },
+    {
+      text: '你需要了解的ESlint配置文件',
+       link:'/guide/你需要了解的ESlint配置文件'
     }
   ]
 }
