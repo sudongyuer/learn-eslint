@@ -10,5 +10,9 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.18.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "underscore": "^1.13.4"
   }
 }
