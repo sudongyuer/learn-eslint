@@ -51,6 +51,10 @@ function getGuideSidebar() {
     {
       text: '你需要了解的ESlint配置文件',
        link:'/guide/你需要了解的ESlint配置文件'
+    },
+    {
+      text: '配置文件',
+       link:'/guide/配置文件'
     }
   ]
 }
