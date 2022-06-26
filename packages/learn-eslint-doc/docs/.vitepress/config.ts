@@ -61,8 +61,8 @@ function getGuideSidebar() {
        link:'/guide/配置语言选项'
     },
     {
-      text: '配置文件',
-       link:'/guide/配置文件'
+      text: '配置规则',
+       link:'/guide/配置规则'
     },
     {
       text: '限制节点模块的导入和eqeqeq',
