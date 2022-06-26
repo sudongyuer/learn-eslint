@@ -63,6 +63,10 @@ function getGuideSidebar() {
     {
       text: '配置文件',
        link:'/guide/配置文件'
+    },
+    {
+      text: '限制节点模块的导入和eqeqeq',
+       link:'/guide/限制节点模块的导入和eqeqeq'
     }
   ]
 }
