@@ -1,7 +1,9 @@
+
 function checkPositive(number) {
   if (number > 0) {
-    return true;
+    return true
   }
-  return false;
+  return false
 }
-checkPositive(10);
+checkPositive(10)
+
