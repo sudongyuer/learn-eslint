@@ -55,6 +55,10 @@ function getGuideSidebar() {
     {
       text: '配置文件',
        link:'/guide/配置文件'
+    },
+    {
+      text: '配置语言选项',
+       link:'/guide/配置语言选项'
     }
   ]
 }
