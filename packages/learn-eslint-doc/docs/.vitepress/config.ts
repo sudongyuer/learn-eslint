@@ -67,6 +67,10 @@ function getGuideSidebar() {
     {
       text: '限制节点模块的导入和eqeqeq',
        link:'/guide/限制节点模块的导入和eqeqeq'
+    },
+    {
+      text: '理解抽象语法树AST',
+       link:'/guide/理解抽象语法树AST'
     }
   ]
 }
