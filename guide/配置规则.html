@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>规则 | Eslint通关小册</title>
+    <meta name="description" content="Eslint 0-1">
+    <link rel="stylesheet" href="/learn-eslint/assets/style.3d5c792e.css">
+    <link rel="modulepreload" href="/learn-eslint/assets/chunks/AlgoliaSearchBox.8da3edea.js">
+    <link rel="modulepreload" href="/learn-eslint/assets/app.a548f652.js">
+    <link rel="modulepreload" href="/learn-eslint/assets/guide_配置规则.md.a9a219eb.lean.js">
+    
+    <meta name="twitter:title" content="规则 | Eslint通关小册">
+  <meta property="og:title" content="规则 | Eslint通关小册">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-7d177114><div class="sidebar-button" data-v-7d177114><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/learn-eslint/" aria-label="Eslint通关小册, back to home" data-v-7d177114 data-v-2e384bd6><!----> Eslint通关小册</a><div class="flex-grow" data-v-7d177114></div><div class="nav" data-v-7d177114><nav class="nav-links" data-v-7d177114 data-v-c5616980><!--[--><div class="item" data-v-c5616980><div class="nav-link" data-v-c5616980 data-v-dbad6dca><a class="item active" href="/learn-eslint/" data-v-dbad6dca>Start <!----></a></div></div><div class="item" data-v-c5616980><div class="nav-link" data-v-c5616980 data-v-dbad6dca><a class="item isExternal" href="https://github.com/sudongyuer" target="_blank" rel="noopener noreferrer" data-v-dbad6dca>About ME <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-dbad6dca><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><div class="item" data-v-c5616980><div class="nav-link" data-v-c5616980 data-v-dbad6dca><a class="item isExternal" href="https://github.com/sudongyuer/learn-eslint" target="_blank" rel="noopener noreferrer" data-v-dbad6dca>GitHub <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-dbad6dca><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div></nav></div><!--[--><!--[--><div class="algolia-search-box" id="docsearch"></div><!--]--><!--]--></header><aside class="sidebar" data-v-3b968e2d><nav class="nav-links nav" data-v-3b968e2d data-v-c5616980><!--[--><div class="item" data-v-c5616980><div class="nav-link" data-v-c5616980 data-v-dbad6dca><a class="item active" href="/learn-eslint/" data-v-dbad6dca>Start <!----></a></div></div><div class="item" data-v-c5616980><div class="nav-link" data-v-c5616980 data-v-dbad6dca><a class="item isExternal" href="https://github.com/sudongyuer" target="_blank" rel="noopener noreferrer" data-v-dbad6dca>About ME <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-dbad6dca><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><div class="item" data-v-c5616980><div class="nav-link" data-v-c5616980 data-v-dbad6dca><a class="item isExternal" href="https://github.com/sudongyuer/learn-eslint" target="_blank" rel="noopener noreferrer" data-v-dbad6dca>GitHub <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-dbad6dca><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div></nav><!--[--><!--]--><ul class="sidebar-links" data-v-3b968e2d><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="/learn-eslint/guide/小册简介">小册简介🍁</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/learn-eslint/guide/初识Eslint">初识Eslint</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/learn-eslint/guide/初始化Eslint">初始化Eslint</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/learn-eslint/guide/你需要了解的ESlint配置文件">你需要了解的ESlint配置文件</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/learn-eslint/guide/配置文件">配置文件</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/learn-eslint/guide/配置语言选项">配置语言选项</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/learn-eslint/guide/配置文件">配置文件</a><!----></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-25083f65><div class="container" data-v-25083f65><!--[--><!--]--><div style="position:relative;" class="content" data-v-25083f65><div><h1 id="规则" tabindex="-1">规则 <a class="header-anchor" href="#规则" aria-hidden="true">#</a></h1><h2 id="配置规则" tabindex="-1">配置规则 <a class="header-anchor" href="#配置规则" aria-hidden="true">#</a></h2><p>ESLint 内置了大量规则，您可以通过插件添加更多规则。您可以使用配置注释或配置文件来修改项目使用的规则。要更改规则设置，您必须将规则 ID 设置为以下值之一：</p><ul><li><code>&quot;off&quot;</code>或<code>0</code>- 关闭规则</li><li><code>&quot;warn&quot;</code>或<code>1</code>- 打开规则作为警告（不影响退出代码）</li><li><code>&quot;error&quot;</code>或<code>2</code>- 将规则作为错误打开（触发时退出代码为 1）</li></ul><h3 id="使用配置注释" tabindex="-1">使用配置注释 <a class="header-anchor" href="#使用配置注释" aria-hidden="true">#</a></h3><p>要使用配置注释在文件内配置规则，请使用以下格式的注释：</p><div class="language-js"><pre><code><span class="token comment">/* eslint eqeqeq: &quot;off&quot;, curly: &quot;error&quot; */</span>
+</code></pre></div><p>在此示例中，<a href="https://eslint.org/docs/latest/rules/eqeqeq" target="_blank" rel="noopener noreferrer"><code>eqeqeq</code></a>关闭并<a href="https://eslint.org/docs/latest/rules/curly" target="_blank" rel="noopener noreferrer"><code>curly</code></a>作为错误打开。您还可以对规则严重性使用数字等价物：</p><div class="language-js"><pre><code><span class="token comment">/* eslint eqeqeq: 0, curly: 2 */</span>
+</code></pre></div><p>此示例与上一个示例相同，只是它使用数字代码而不是字符串值。规则已<code>eqeqeq</code>关闭且<code>curly</code>规则设置为错误。</p><p>如果规则有其他选项，您可以使用数组文字语法指定它们，例如：</p><div class="language-js"><pre><code><span class="token comment">/* eslint quotes: [&quot;error&quot;, &quot;double&quot;], curly: 2 */</span>
+</code></pre></div><p>此注释指定<a href="https://eslint.org/docs/latest/rules/quotes" target="_blank" rel="noopener noreferrer"><code>quotes</code></a>规则的“双重”选项。数组中的第一项始终是规则严重性（数字或字符串）。</p><p>配置注释可以包括说明为什么需要注释。<code>-</code>描述必须出现在配置之后，并且由两个或多个连续字符与配置分开。例如：</p><div class="language-js"><pre><code><span class="token comment">/* eslint eqeqeq: &quot;off&quot;, curly: &quot;error&quot; -- Here&#39;s a description about why this configuration is necessary. */</span>
+<span class="token comment">/* eslint eqeqeq: &quot;off&quot;, curly: &quot;error&quot;
+    --------
+    Here&#39;s a description about why this configuration is necessary. */</span>
+<span class="token comment">/* eslint eqeqeq: &quot;off&quot;, curly: &quot;error&quot;
+ * --------
+ * This will not work due to the line above starting with a &#39;*&#39; character.
+ */</span>
+</code></pre></div><h3 id="使用配置文件" tabindex="-1">使用配置文件 <a class="header-anchor" href="#使用配置文件" aria-hidden="true">#</a></h3><p>要在配置文件中配置规则，请使用<code>rules</code>密钥以及错误级别和您要使用的任何选项。例如：</p><div class="language-json"><pre><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;eqeqeq&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;curly&quot;</span><span class="token operator">:</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;quotes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;double&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在 YAML 中：</p><div class="language-yaml"><pre><code><span class="token punctuation">---</span>
+<span class="token key atrule">rules</span><span class="token punctuation">:</span>
+  <span class="token key atrule">eqeqeq</span><span class="token punctuation">:</span> off
+  <span class="token key atrule">curly</span><span class="token punctuation">:</span> error
+  <span class="token key atrule">quotes</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> error
+    <span class="token punctuation">-</span> double
+</code></pre></div><p>要配置在插件中定义的规则，您必须在规则 ID 前加上插件名称和<code>/</code>. 例如：</p><div class="language-json"><pre><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;plugin1&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;eqeqeq&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;curly&quot;</span><span class="token operator">:</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;quotes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;double&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;plugin1/rule1&quot;</span><span class="token operator">:</span> <span class="token string">&quot;error&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在 YAML 中：</p><div class="language-yaml"><pre><code><span class="token punctuation">---</span>
+<span class="token key atrule">plugins</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> plugin1
+<span class="token key atrule">rules</span><span class="token punctuation">:</span>
+  <span class="token key atrule">eqeqeq</span><span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token key atrule">curly</span><span class="token punctuation">:</span> error
+  <span class="token key atrule">quotes</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> error
+    <span class="token punctuation">-</span> <span class="token string">&quot;double&quot;</span>
+  <span class="token key atrule">plugin1/rule1</span><span class="token punctuation">:</span> error
+</code></pre></div><p>在这些配置文件中，规则<code>plugin1/rule1</code>来自名为<code>plugin1</code>. 您还可以将此格式与配置注释一起使用，例如：</p><div class="language-js"><pre><code><span class="token comment">/* eslint &quot;plugin1/rule1&quot;: &quot;error&quot; */</span>
+</code></pre></div><p>**注意：**从插件中指定规则时，请确保省略<code>eslint-plugin-</code>. ESLint 在内部仅使用无前缀名称来定位规则。</p><h2 id="禁用规则" tabindex="-1">禁用规则 <a class="header-anchor" href="#禁用规则" aria-hidden="true">#</a></h2><h3 id="使用配置注释-1" tabindex="-1">使用配置注释 <a class="header-anchor" href="#使用配置注释-1" aria-hidden="true">#</a></h3><p>要暂时禁用文件中的规则警告，请使用以下格式的块注释：</p><div class="language-js"><pre><code><span class="token comment">/* eslint-disable */</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* eslint-enable */</span>
+</code></pre></div><p>⚠️注意这里禁用和开启必须是在rules里面开启过后才能选择在注释进行开启或者关闭</p><p>您还可以禁用或启用特定规则的警告：</p><div class="language-js"><pre><code><span class="token comment">/* eslint-disable no-alert, no-console */</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&#39;bar&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* eslint-enable no-alert, no-console */</span>
+</code></pre></div><p><strong>注意：</strong> <code>/* eslint-enable */</code>没有列出任何特定规则将导致所有禁用的规则重新启用。</p><p>要在整个文件中禁用规则警告，请在文件<code>/* eslint-disable */</code>顶部添加块注释：</p><div class="language-js"><pre><code><span class="token comment">/* eslint-disable */</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>您还可以禁用或启用整个文件的特定规则：</p><div class="language-js"><pre><code><span class="token comment">/* eslint-disable no-alert */</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>确保永远不会应用规则（无论将来有任何启用/禁用行）：</p><div class="language-js"><pre><code><span class="token comment">/* eslint no-alert: &quot;off&quot; */</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>要禁用特定行上的所有规则，请使用以下格式之一的行或块注释：</p><div class="language-js"><pre><code><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// eslint-disable-line</span>
+
+<span class="token comment">// eslint-disable-next-line</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* eslint-disable-next-line */</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* eslint-disable-line */</span>
+</code></pre></div><p>要禁用特定行上的特定规则：</p><div class="language-js"><pre><code><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// eslint-disable-line no-alert</span>
+
+<span class="token comment">// eslint-disable-next-line no-alert</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* eslint-disable-line no-alert */</span>
+
+<span class="token comment">/* eslint-disable-next-line no-alert */</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>要禁用特定行上的多个规则：</p><div class="language-js"><pre><code><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// eslint-disable-line no-alert, quotes, semi</span>
+
+<span class="token comment">// eslint-disable-next-line no-alert, quotes, semi</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* eslint-disable-line no-alert, quotes, semi */</span>
+
+<span class="token comment">/* eslint-disable-next-line no-alert, quotes, semi */</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* eslint-disable-next-line
+  no-alert,
+  quotes,
+  semi
+*/</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>以上所有方法也适用于插件规则。例如，要禁用<code>eslint-plugin-example</code>的<code>rule-name</code>规则，请将插件的名称 ( <code>example</code>) 和规则的名称 ( <code>rule-name</code>) 组合成<code>example/rule-name</code>：</p><div class="language-js"><pre><code><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// eslint-disable-line example/rule-name</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* eslint-disable-line example/rule-name */</span>
+</code></pre></div><p>配置注释可以包括说明为什么需要注释。描述必须在配置之后，并且需要与配置相隔两个或多个连续<code>-</code>字符。例如：</p><div class="language-js"><pre><code><span class="token comment">// eslint-disable-next-line no-console -- Here&#39;s a description about why this configuration is necessary.</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&#39;hello&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* eslint-disable-next-line no-console --
+ * Here&#39;s a very long description about why this configuration is necessary
+ * along with some additional information
+**/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&#39;hello&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>**注意：**为文件的一部分禁用警告的注释告诉 ESLint 不要报告禁用代码的规则违规。然而，ESLint 仍然解析整个文件，因此禁用的代码仍然需要是语法上有效的 JavaScript。</p><h3 id="使用配置文件-1" tabindex="-1">使用配置文件 <a class="header-anchor" href="#使用配置文件-1" aria-hidden="true">#</a></h3><p>要在一组文件的配置文件中禁用规则，请使用<code>overrides</code>键和<code>files</code>键。例如：</p><div class="language-json"><pre><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>...<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;overrides&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;files&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;*-test.js&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;*.spec.js&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;no-unused-expressions&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="禁用内联注释" tabindex="-1">禁用内联注释 <a class="header-anchor" href="#禁用内联注释" aria-hidden="true">#</a></h3><p>要禁用所有内联配置注释，请使用该<code>noInlineConfig</code>设置。例如：</p><div class="language-json"><pre><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>...<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;noInlineConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此设置类似于<a href="https://eslint.org/docs/latest/user-guide/command-line-interface#--no-inline-config" target="_blank" rel="noopener noreferrer">–no-inline-config</a> CLI 选项。</p><h4 id="报告未使用的eslint-disable评论" tabindex="-1">报告未使用的<code>eslint-disable</code>评论 <a class="header-anchor" href="#报告未使用的eslint-disable评论" aria-hidden="true">#</a></h4><p>要报告未使用<code>eslint-disable</code>的评论，请使用该<code>reportUnusedDisableDirectives</code>设置。例如：</p><div class="language-json"><pre><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>...<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportUnusedDisableDirectives&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此设置类似于<a href="https://eslint.org/docs/latest/user-guide/command-line-interface#--report-unused-disable-directives" target="_blank" rel="noopener noreferrer">–report-unused-disable-directives</a> CLI 选项，但不会导致 linting 失败（报告为<code>&quot;warn&quot;</code>严重性）。</p><h2 id="实战" tabindex="-1">实战 <a class="header-anchor" href="#实战" aria-hidden="true">#</a></h2><p>目标 ： 不允许使用alert()</p><div class="language-json"><pre><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;env&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;browser&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;es2021&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint:recommended&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;parserOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ecmaVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;latest&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;indent&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+            <span class="token number">2</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;linebreak-style&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;unix&quot;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;quotes&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;single&quot;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;semi&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;never&quot;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;no-alert&quot;</span><span class="token operator">:</span><span class="token string">&quot;error&quot;</span> <span class="token comment">//👈</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3lsg5t0ksj20pg0a2wev.jpg" alt=""></p></div></div><footer class="page-footer" data-v-25083f65 data-v-080e2f63><div class="edit" data-v-080e2f63><div class="edit-link" data-v-080e2f63 data-v-5b1800b6><!----></div></div><div class="updated" data-v-080e2f63><p class="last-updated" data-v-080e2f63 data-v-f870aa70><span class="prefix" data-v-f870aa70>Last Updated:</span><span class="datetime" data-v-f870aa70></span></p></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"guide_你需要了解的eslint配置文件.md\":\"b888276e\",\"guide_初始化eslint.md\":\"e9396311\",\"guide_初识eslint.md\":\"f634450c\",\"guide_小册简介.md\":\"6a8120a2\",\"guide_配置文件.md\":\"7f2a1c57\",\"guide_配置规则.md\":\"a9a219eb\",\"guide_配置语言选项.md\":\"f4d2ef20\",\"index.md\":\"a7f04fab\"}")</script>
+    <script type="module" async src="/learn-eslint/assets/app.a548f652.js"></script>
+    
+  </body>
+</html>
