@@ -5,8 +5,10 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
+    "noInlineConfig": false,
     "rules": {
         "indent":[
             "error",
@@ -24,6 +26,7 @@
             "error",
             "never"
         ],
-        "no-alert":"error"
+        "no-alert":"error",
+        "no-unused-vars":"warn"
     }
 }
