@@ -23,8 +23,10 @@
 
 - 接下来在 `.eslintrc.json`中启动自定义规则，规则名就是我们在rules文件夹下的文件名
 
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3n81nomk9j20sm18wjvc.jpg" alt="image-20220627233200273" style="zoom:50%;" />
+## 运行及效果
 
-- 同样适用 --rules在命令行加载自定义规则，然后我们看看效果
+- 同样使用 --rules在命令行加载自定义规则，然后我们看看效果
+
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3n81nomk9j20sm18wjvc.jpg" alt="image-20220627233200273" style="zoom:50%;" />
 
 <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3n83udxjjj20vt0u0q7h.jpg" alt="image-20220627233406282" style="zoom:50%;" />
