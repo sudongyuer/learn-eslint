@@ -75,6 +75,10 @@ function getGuideSidebar() {
     {
       text: '创建一个自定义规则',
        link:'/guide/创建一个自定义规则'
+    },
+    {
+      text: '找到项目中的TODO',
+       link:'/guide/找到项目中的TODO'
     }
   ]
 }
