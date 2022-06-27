@@ -79,6 +79,10 @@ function getGuideSidebar() {
     {
       text: '找到项目中的TODO',
        link:'/guide/找到项目中的TODO'
+    },
+    {
+      text: '在自定义规则中添加参数',
+       link:'/guide/在自定义规则中添加参数'
     }
   ]
 }
