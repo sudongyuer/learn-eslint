@@ -31,7 +31,7 @@
         "no-unused-vars":"warn",
         "no-restricted-imports":[2,"lodash"],
         "eqeqeq":["error","always"],
-        "find-todo":["error"]
-        // "find-deprecated":["error"]
+        "find-todo":["error","fixme","todo"],
+        "find-deprecated":["error"]
     }
 }
