@@ -71,6 +71,10 @@ function getGuideSidebar() {
     {
       text: '理解抽象语法树AST',
        link:'/guide/理解抽象语法树AST'
+    },
+    {
+      text: '创建一个自定义规则',
+       link:'/guide/创建一个自定义规则'
     }
   ]
 }
