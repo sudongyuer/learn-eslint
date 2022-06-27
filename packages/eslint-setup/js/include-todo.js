@@ -2,3 +2,8 @@
 function needTodo(){
   console.log('sudongyuer need todo')
 }
+
+//fixme
+function needFix(){
+  console.log('need fix')
+}
