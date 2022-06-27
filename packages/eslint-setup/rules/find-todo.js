@@ -1,11 +1,15 @@
 module.exports = {
   create(context) {
+    const options = context.options
+
     function findComments(comment){
-      if(comment.value.toLowerCase().indexOf('todo')!==-1){
-        context.report({
-          node: comment,
-          message: '速冻鱼🐟 请修复这个TODO'
-        });
+      for(let option of options){
+        if(comment.value.toLowerCase().includes(option)){
+          context.report({
+            node: comment,
+            message: `速冻鱼🐟 请修复这个${option} 它不能被使用`
+          });
+        }
       }
     }
 
