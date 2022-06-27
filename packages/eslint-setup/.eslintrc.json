@@ -30,7 +30,7 @@
         "no-alert":"error",
         "no-unused-vars":"warn",
         "no-restricted-imports":[2,"lodash"],
-        "eqeqeq":["error","always"],
-        "find-deprecated":["error"]
+        "eqeqeq":["error","always"]
+        // "find-deprecated":["error"]
     }
 }
