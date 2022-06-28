@@ -89,8 +89,8 @@ function getGuideSidebar() {
        link:'/guide/修复自定义规则中的错误'
     },
     {
-      text: 'ESLintPlugin和ESLintConfig的区别',
-       link:'/guide/ESLintPlugin和ESLintConfig的区别'
+      text: 'ESLintPlugin和ESlintConfig的区别',
+       link:'/guide/ESLintPlugin和ESlintConfig的区别'
     }
   ]
 }
