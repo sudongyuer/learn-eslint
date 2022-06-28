@@ -11,7 +11,7 @@
 
 - 先编写一个代码TODO的代码等待测验
 
-![image-20220627232655155](/Users/sudongyu/Library/Application Support/typora-user-images/image-20220627232655155.png)
+![image-20220627232655155](https://tva1.sinaimg.cn/large/e6c9d24egy1h3o8iceavxj21ao0u00w4.jpg)
 
 - 在rules文件夹编写我们的自定义规则
   - 中间用刀了context的一些API，大家感兴趣可以自行去eslint官网查看一下，它有很多丰富的API可以供开发者使用
@@ -30,3 +30,4 @@
 <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3n81nomk9j20sm18wjvc.jpg" alt="image-20220627233200273" style="zoom:50%;" />
 
 <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3n83udxjjj20vt0u0q7h.jpg" alt="image-20220627233406282" style="zoom:50%;" />
+
