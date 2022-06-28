@@ -83,6 +83,10 @@ function getGuideSidebar() {
     {
       text: '在自定义规则中添加参数',
        link:'/guide/在自定义规则中添加参数'
+    },
+    {
+      text: '修复自定义规则中的错误',
+       link:'/guide/修复自定义规则中的错误'
     }
   ]
 }
