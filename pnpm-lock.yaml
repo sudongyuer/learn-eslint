@@ -13,6 +13,7 @@ importers:
   packages/eslint-setup:
     specifiers:
       eslint: ^8.18.0
+      eslint-plugin-promise: ^6.0.0
       lodash: ^4.17.21
       underscore: ^1.13.4
     dependencies:
@@ -20,6 +21,7 @@ importers:
       underscore: 1.13.4
     devDependencies:
       eslint: 8.18.0
+      eslint-plugin-promise: 6.0.0_eslint@8.18.0
 
   packages/learn-eslint-doc:
     specifiers:
@@ -1173,6 +1175,15 @@ packages:
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /eslint-plugin-promise/6.0.0_eslint@8.18.0:
+    resolution: {integrity: sha512-7GPezalm5Bfi/E22PnQxDWH2iW9GTvAlUNTztemeHb6c1BniSyoeTrM87JkC0wYdi6aQrZX9p2qEiAno8aTcbw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0
+    dependencies:
+      eslint: 8.18.0
     dev: true
 
   /eslint-scope/7.1.1:

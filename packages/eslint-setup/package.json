@@ -9,7 +9,8 @@
   "author": "sudongyuer",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.18.0"
+    "eslint": "^8.18.0",
+    "eslint-plugin-promise": "^6.0.0"
   },
   "dependencies": {
     "lodash": "^4.17.21",
