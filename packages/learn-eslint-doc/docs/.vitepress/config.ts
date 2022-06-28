@@ -91,6 +91,10 @@ function getGuideSidebar() {
     {
       text: 'ESLintPlugin和ESlintConfig的区别',
        link:'/guide/ESLintPlugin和ESlintConfig的区别'
+    },
+    {
+      text:'如何安装并使用ESLintPlugin',
+      link:'/guide/如何安装并使用ESLintPlugin'
     }
   ]
 }
