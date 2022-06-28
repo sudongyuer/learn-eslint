@@ -1,12 +1,18 @@
 module.exports = {
+  meta:{
+    fixable:"code"
+  },
   create(context) {
     return {
-      FunctionDeclaration: function (node) {
-        if (node.id.name === "deprecatedSayHello") {
+      CallExpression: function (node) {
+        if (node.callee.name === "deprecatedSayHello") {
           context.report({
             node: node,
             message:
-              "改函数已过时，请更换为SayHello"
+              "改函数已过时，请更换为SayHello",
+              fix: function(fixer){
+                return fixer.replaceText(node.callee,'SayHello')
+              }
           });
         }
       }
