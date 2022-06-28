@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "root": true,
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "noInlineConfig": false,
+    "rules": {
+        "indent":[
+            "error",
+            2
+        ],
+        "linebreak-style":[
+            "error",
+            "unix"
+        ],
+        "quotes":[
+            "error",
+            "single"
+        ],
+        "semi":[
+            "error",
+            "never"
+        ],
+        "no-alert":"error",
+        "no-unused-vars":"warn",
+        "no-restricted-imports":[2,"lodash"],
+        "eqeqeq":["error","always"],
+        "find-todo":["error","fixme","todo"],
+        "find-deprecated":["error"]
+    }
+}
