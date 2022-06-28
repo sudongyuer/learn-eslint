@@ -5,3 +5,5 @@ function deprecatedSayHello(){
 function SayHello(){
   console.log('hello world')
 }
+
+deprecatedSayHello()
