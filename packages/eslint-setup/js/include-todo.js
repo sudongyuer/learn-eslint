@@ -1,9 +1,9 @@
-//TODO ⌛️ 等待实现
-function needTodo(){
+// TODO ⌛️ 等待实现
+function needTodo() {
   console.log('sudongyuer need todo')
 }
 
-//fixme
-function needFix(){
+// fixme
+function needFix() {
   console.log('need fix')
 }

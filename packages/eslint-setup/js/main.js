@@ -1,4 +1,3 @@
-
 function checkPositive(number) {
   if (number > 0) {
     return true
@@ -6,4 +5,3 @@ function checkPositive(number) {
   return false
 }
 checkPositive(10)
-

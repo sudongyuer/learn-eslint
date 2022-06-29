@@ -1,8 +1,8 @@
-function deprecatedSayHello(){
+function deprecatedSayHello() {
   console.log('hello world')
 }
 
-function SayHello(){
+function SayHello() {
   console.log('hello world')
 }
 

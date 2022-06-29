@@ -4,7 +4,7 @@
         "es2021": true
     },
     "root": true,
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended","airbnb-base"],
     "plugins": ["promise"],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -12,6 +12,7 @@
     },
     "noInlineConfig": false,
     "rules": {
-        "promise/catch-or-return": "error"
+        "promise/catch-or-return": "error",
+        "semi":[2,"never"]
     }
 }
