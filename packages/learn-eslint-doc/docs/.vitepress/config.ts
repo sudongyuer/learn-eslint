@@ -95,6 +95,10 @@ function getGuideSidebar() {
     {
       text:'如何安装并使用ESLintPlugin',
       link:'/guide/如何安装并使用ESLintPlugin'
+    },
+    {
+      text:'如何安装并使用ESLintConfig',
+      link:'/guide/如何安装并使用ESLintConfig'
     }
   ]
 }
