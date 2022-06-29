@@ -99,6 +99,10 @@ function getGuideSidebar() {
     {
       text:'如何安装并使用ESLintConfig',
       link:'/guide/如何安装并使用ESLintConfig'
+    },
+    {
+      text:'创建一个可共享的ESLint插件',
+      link:'/guide/创建一个可共享的ESLint插件'
     }
   ]
 }
