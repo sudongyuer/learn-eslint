@@ -1,11 +1,12 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node":true
     },
     "root": true,
     "extends": ["eslint:recommended","airbnb-base"],
-    "plugins": ["promise"],
+    "plugins": ["promise","eslint-plugin-sudongyuer"],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -13,6 +14,8 @@
     "noInlineConfig": false,
     "rules": {
         "promise/catch-or-return": "error",
-        "semi":[2,"never"]
+        "import/no-unresolved":0,
+        // "semi":[2,"never"],
+        "sudongyuer/find-todo":["error","todo","fixme"]
     }
 }
