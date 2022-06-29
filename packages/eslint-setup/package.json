@@ -12,7 +12,8 @@
     "eslint": "^8.18.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-sudongyuer":"workspace:*"
   },
   "dependencies": {
     "lodash": "^4.17.21",
