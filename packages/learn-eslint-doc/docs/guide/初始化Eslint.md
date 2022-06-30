@@ -57,7 +57,7 @@ yarn run eslint yourfile.js
 
 ## 配置
 
-在运行 npm init@eslint/config 之后，您将有一个，`.eslintrc`{ js，yml，json }文件。在其中，您将看到一些如下配置的规则:
+在运行 npm init@eslint/config 之后，您将有一个，`.eslintrc.{ js，yml，json }`文件。在其中，您将看到一些如下配置的规则:
 
 ```json
 {
@@ -79,7 +79,7 @@ yarn run eslint yourfile.js
 
 这三个错误级别允许您对 ESLint 如何应用规则进行细粒度控制(有关更多配置选项和详细信息，请参阅[configuration docs](https://eslint.org/docs/latest/user-guide/configuring/))。
 
-您的. eslintrc.{ js，yml，json }配置文件还将包含以下行:
+您的`.eslintrc.{ js，yml，json }`配置文件还将包含以下行:
 
 ```shell
 {
