@@ -19,5 +19,5 @@ module.exports = {
   "rules": {
     "requireSchemaPropertyWhenOptionless": "0",
     // "semi":[2,"never"]
-}
+},
 };
