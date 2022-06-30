@@ -4,7 +4,7 @@
 
 Before：
 
-<img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h3q8914rhfj20gy0ftq49.jpg" alt="image-20220630133720070" style="zoom: 50%;" />
+<img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h3q8914rhfj20gy0ftq49.jpg" alt="image-20220630133720070"  />
 
 期望：只需要在plugins属性指定要导入的自定义插件，自定义规则自动启用
 
@@ -23,3 +23,4 @@ Before：
 ## 效果 
 
 ![image-20220630134834063](https://tva1.sinaimg.cn/large/e6c9d24ely1h3q81k9vqaj20rb0rjjum.jpg)
+
