@@ -1,0 +1,32 @@
+import{_ as n,c as s,o as a,a as t}from"./app.4ccc9a9b.js";const _='{"title":"\u9650\u5236\u8282\u70B9\u6A21\u5757\u7684\u5BFC\u5165\u548Ceqeqeq","description":"","frontmatter":{},"headers":[{"level":2,"title":"\u80CC\u666F","slug":"\u80CC\u666F"},{"level":2,"title":"Coding","slug":"coding"}],"relativePath":"guide/\u9650\u5236\u8282\u70B9\u6A21\u5757\u7684\u5BFC\u5165\u548Ceqeqeq.md","lastUpdated":1656240075000}',p={},o=t(`<h1 id="\u9650\u5236\u8282\u70B9\u6A21\u5757\u7684\u5BFC\u5165\u548Ceqeqeq" tabindex="-1">\u9650\u5236\u8282\u70B9\u6A21\u5757\u7684\u5BFC\u5165\u548Ceqeqeq <a class="header-anchor" href="#\u9650\u5236\u8282\u70B9\u6A21\u5757\u7684\u5BFC\u5165\u548Ceqeqeq" aria-hidden="true">#</a></h1><blockquote><p>\u6B21\u7BC7\u4E3A\u5B9E\u6218\u7BC7</p></blockquote><h2 id="\u80CC\u666F" tabindex="-1">\u80CC\u666F <a class="header-anchor" href="#\u80CC\u666F" aria-hidden="true">#</a></h2><ul><li>\u901A\u5E38\u9879\u76EE\u4E2D\u53EA\u80FD\u4F7F\u7528\u4E00\u4E2A\u5DE5\u5177\u51FD\u6570\u5E93\uFF0C\u6BD4\u5982lodash \u6216\u8005 underscore\uFF0C\u4F46\u662F\u5982\u679C\u4E00\u4E2A\u9879\u76EE\u4E24\u4E2A\u90FD\u5728\u4F7F\u7528 \u5FC5\u5B9A\u4F1A\u9020\u6210\u4EE3\u7801\u7684\u5197\u4F59\u95EE\u9898</li><li>\u9879\u76EE\u4E2D\u4E0D\u5141\u8BB8\u4F7F\u7528<code>==</code>\uFF0C\u800C\u662F\u5E94\u8BE5\u4F7F\u7528<code>===</code></li></ul><h2 id="coding" tabindex="-1">Coding <a class="header-anchor" href="#coding" aria-hidden="true">#</a></h2><p>\u9700\u8981lint\u7684code</p><div class="language-js"><pre><code><span class="token keyword">import</span> lodash <span class="token keyword">from</span> <span class="token string">&#39;lodash&#39;</span>
+
+<span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&#39;a&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;b&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;c&#39;</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> index<span class="token operator">=</span>lodash<span class="token punctuation">.</span><span class="token function">findIndex</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span><span class="token string">&#39;a&#39;</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+<span class="token keyword">function</span> <span class="token function">checkEven</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>number<span class="token operator">%</span><span class="token number">2</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">checkEven</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>
+
+</code></pre></div><p><code>.eslintrc.json</code></p><div class="language-json"><pre><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;env&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;browser&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;es2021&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint:recommended&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;parserOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ecmaVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;latest&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sourceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;noInlineConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;no-restricted-imports&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">&quot;lodash&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">//\u{1F448}</span>
+        <span class="token property">&quot;eqeqeq&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;always&quot;</span><span class="token punctuation">]</span><span class="token comment">//\u{1F448}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>\u6548\u679C\uFF1A</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3ltx7lsdxj20nw0j6400.jpg" alt=""></p>`,11),e=[o];function c(l,u,r,k,i,d){return a(),s("div",null,e)}var h=n(p,[["render",c]]);export{_ as __pageData,h as default};
