@@ -5,7 +5,7 @@
         "node":true
     },
     "root": true,
-    "extends": ["eslint:recommended","airbnb-base"],
+    "extends": ["eslint:recommended","airbnb-base","plugin:sudongyuer/sudongyuerConfig"],
     "plugins": ["promise","eslint-plugin-sudongyuer"],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -14,8 +14,7 @@
     "noInlineConfig": false,
     "rules": {
         "promise/catch-or-return": "error",
-        "import/no-unresolved":0,
+        "import/no-unresolved":0
         // "semi":[2,"never"],
-        "sudongyuer/find-todo":["error","todo","fixme"]
     }
 }
