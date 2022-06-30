@@ -115,6 +115,10 @@ function getGuideSidebar() {
         {
           text: '在自定义插件中添加rules',
           link: '/guide/在自定义插件中添加rules'
+        },
+        {
+          text: '在React项目中使用ESLint',
+          link: '/guide/在React项目中使用ESLint'
         }
       ]
     }
