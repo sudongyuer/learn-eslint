@@ -103,6 +103,10 @@ function getGuideSidebar() {
     {
       text:'创建一个可共享的ESLint插件',
       link:'/guide/创建一个可共享的ESLint插件'
+    },
+    {
+      text:'在自定义插件中添加rules',
+      link:'/guide/在自定义插件中添加rules'
     }
   ]
 }
