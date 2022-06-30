@@ -23,7 +23,7 @@ yarn add eslint --dev
 
 # or
 
-pnpm add eslint --dev
+pnpm add eslint --save-dev
 ```
 
 - 通过eslint的命令行工具初始化Eslint配置文件
@@ -37,7 +37,7 @@ yarn create @eslint/config
 
 # or
 
-pnpm create @eslit/config
+pnpm create @eslint/config
 
 ```
 
