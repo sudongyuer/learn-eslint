@@ -14,7 +14,7 @@
 ![image-20220627232655155](https://tva1.sinaimg.cn/large/e6c9d24egy1h3o8iceavxj21ao0u00w4.jpg)
 
 - 在rules文件夹编写我们的自定义规则
-  - 中间用刀了context的一些API，大家感兴趣可以自行去eslint官网查看一下，它有很多丰富的API可以供开发者使用
+  - 中间用到了context的一些API，大家感兴趣可以自行去eslint官网查看一下，它有很多丰富的API可以供开发者使用
   - 比如`context.getSourceCode()`就是拿到当前ESlint正在解析的源文件
   - `sourCode.getAllComments()`就是获取当前源文件下的所有注释
   - 后边的大家看代码也能看懂了
