@@ -4,11 +4,11 @@
 
 Before：
 
-<img src="/Users/sudongyu/Library/Application Support/typora-user-images/image-20220630133720070.png" alt="image-20220630133720070" style="zoom: 50%;" />
+<img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h3q8914rhfj20gy0ftq49.jpg" alt="image-20220630133720070" style="zoom: 50%;" />
 
 期望：只需要在plugins属性指定要导入的自定义插件，自定义规则自动启用
 
-![image-20220630133754360](/Users/sudongyu/Library/Application Support/typora-user-images/image-20220630133754360.png)
+![image-20220630133754360](https://tva1.sinaimg.cn/large/e6c9d24ely1h3q892uxpdj20gu0cit9j.jpg)
 
 ## Coding
 
