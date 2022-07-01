@@ -41,7 +41,7 @@ pnpm create @eslint/config
 
 ```
 
-注意: `npm init@eslint/config` 假设您已经有一个 `package.json` 文件。如果没有，请确保事先运行 `npm init` 或`yarn init`。
+注意: `npm init @eslint/config` 假设您已经有一个 `package.json` 文件。如果没有，请确保事先运行 `npm init` 或`yarn init`。
 
 - 然后你可以在任何文件或者目录运行ESlint，如下所示
 
@@ -53,11 +53,11 @@ npx eslint yourfile.js
 yarn run eslint yourfile.js
 ```
 
-还可以在全局而不是本地安装 ESLint (使用 npm install ESLint —— global)。但是，不建议这样做，而且在这两种情况下，您使用的任何插件或可共享配置都必须在本地安装。
+还可以在全局而不是本地安装 ESLint (使用 `npm install ESLint —— global`)。但是，不建议这样做，而且在这两种情况下，您使用的任何插件或可共享配置都必须在本地安装。
 
 ## 配置
 
-在运行 npm init@eslint/config 之后，您将有一个，`.eslintrc.{ js，yml，json }`文件。在其中，您将看到一些如下配置的规则:
+在运行 `npm init @eslint/config` 之后，您将有一个，`.eslintrc.{ js，yml，json }`文件。在其中，您将看到一些如下配置的规则:
 
 ```json
 {
@@ -68,14 +68,11 @@ yarn run eslint yourfile.js
 }
 ```
 
-在 ESLint 中，名称“ semi”和“ quote”是规则的名称。第一个值是规则的错误级别，可以是下列值之一:
+在 ESLint 中，名称“semi”和“quote”是规则的名称。第一个值是规则的错误级别，可以是下列值之一:
 
-- `"off"` or `0` - turn the rule off
-- “关闭”或0-关闭规则
-- `"warn"` or `1` - turn the rule on as a warning (doesn’t affect exit code)
-- “警告”或1-打开规则作为警告(不影响退出代码)
-- `"error"` or `2` - turn the rule on as an error (exit code will be 1)
-- “ error”或2-将规则作为错误打开(退出代码为1)
+- `off` or `0` - 关闭规则
+- `warn` or `1` - 将规则作为警告(不影响退出代码)
+- `error` or `2` - 将规则作为错误打开(退出代码为1)
 
 这三个错误级别允许您对 ESLint 如何应用规则进行细粒度控制(有关更多配置选项和详细信息，请参阅[configuration docs](https://eslint.org/docs/latest/user-guide/configuring/))。
 
@@ -87,7 +84,7 @@ yarn run eslint yourfile.js
 }
 ```
 
-因为有了这一行，规则页面上标记为“(推荐)”的所有规则都将被打开。或者，您可以使用其他人通过在 npmjs. com 上搜索“ eslint-config”创建的配置。除非从共享配置进行扩展，或者在配置中显式打开规则，否则 ESLint 将不会对代码进行 lint。
+因为有了这一行，规则页面上标记为“(推荐)”的所有规则都将被打开。您也可以通过在 npmjs. com 上搜索“eslint-config”引用其他人创建的配置。除非从共享配置进行扩展，或者在配置中显式打开规则，否则 ESLint 将不会对代码进行 lint。
 
 ## 实战小练习
 
