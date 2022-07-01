@@ -119,6 +119,10 @@ function getGuideSidebar() {
         {
           text: '在React项目中使用ESLint',
           link: '/guide/在React项目中使用ESLint'
+        },
+        {
+          text: '在编辑器中集成Eslint',
+          link: '/guide/在编辑器中集成Eslint'
         }
       ]
     }
