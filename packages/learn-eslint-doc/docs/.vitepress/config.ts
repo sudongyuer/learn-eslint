@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'ESLint通关小册',
   description: 'Eslint 0-1',
   lastUpdated: true,
+  base:"/learn-eslint/",
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   ],
