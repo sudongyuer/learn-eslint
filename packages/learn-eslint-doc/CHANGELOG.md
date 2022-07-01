@@ -1,5 +1,11 @@
 # learn-eslint-doc
 
+## 1.0.3
+
+### Patch Changes
+
+- upgrade vitepress 1.0.0-alpha.4
+
 ## 1.0.2
 
 ### Patch Changes
