@@ -1,6 +1,6 @@
 {
   "name": "eslint-setup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-sudongyuer":"workspace:*"
+    "eslint-plugin-sudongyuer": "workspace:*"
   },
   "dependencies": {
     "lodash": "^4.17.21",
