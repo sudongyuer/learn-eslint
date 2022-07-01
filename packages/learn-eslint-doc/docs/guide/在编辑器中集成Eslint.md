@@ -26,5 +26,5 @@
 
 - 效果
 
-![Kapture 2022-07-01 at 08.12.33](/private/var/folders/21/7vb9k8g95rxfkthvd8b0l3xc0000gn/T/3fb9e161cde91ac7a4d9d595e5072cfb/Kapture 2022-07-01 at 08.12.33.gif)
+![](https://tva1.sinaimg.cn/large/e6c9d24egy1h3rpnaih65j20nw0ilgne.jpg)
 
