@@ -1,4 +1,4 @@
-# 如何安装并使用ESLintPlugin
+# 如何安装并使用 ESLintPlugin
 
 ## 目标
 
@@ -16,6 +16,6 @@
 
 ## 效果及运行
 
-可以看见promise相关的自定义规则生效了
+可以看见 promise 相关的自定义规则生效了
 
 ![image-20220629002455952](https://tva1.sinaimg.cn/large/e6c9d24egy1h3of71j38qj20wx0u0jv1.jpg)
