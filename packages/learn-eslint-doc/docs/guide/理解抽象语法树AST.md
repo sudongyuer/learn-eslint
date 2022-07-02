@@ -24,9 +24,9 @@
 
 ## ESlint 如何使用AST的
 
-- Eslint使用ESPree JavaScript解析器来解析代码
+- ESLint使用ESPree JavaScript解析器来解析代码
 - ESpree解析器转换JavaScript代码为AST
-- 下图就是Eslint使用ESpree解析JavaScript代码为AST的展示
+- 下图就是ESLint使用ESpree解析JavaScript代码为AST的展示
 - ![image-20220626235914449](https://tva1.sinaimg.cn/large/e6c9d24egy1h3m37qkbw5j21dl0u0jue.jpg)
 
 ## 为什么要了解AST

@@ -26,7 +26,7 @@ yarn add eslint --dev
 pnpm add eslint --save-dev
 ```
 
-- 通过 eslint 的命令行工具初始化 Eslint 配置文件
+- 通过 eslint 的命令行工具初始化 ESLint 配置文件
 
 ```shell
 npm init @eslint/config

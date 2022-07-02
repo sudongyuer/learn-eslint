@@ -3,7 +3,7 @@ import { DefaultTheme, defineConfig } from 'vitepress'
 export default defineConfig({
   lang: "zh-CN",
   title: 'ESLint通关小册',
-  description: 'Eslint 0-1',
+  description: 'ESLint 0-1',
   lastUpdated: true,
   base:"/learn-eslint/",
   head: [
@@ -49,12 +49,12 @@ function getSideBar():DefaultTheme.Sidebar {
         link: '/guide/小册简介'
       },
       {
-        text: '初识Eslint',
-        link: '/guide/初识Eslint'
+        text: '初识ESLint',
+        link: '/guide/初识ESLint'
       },
       {
-        text: '初始化Eslint',
-        link: '/guide/初始化Eslint'
+        text: '初始化ESLint',
+        link: '/guide/初始化ESLint'
       },
       {
         text: '你需要了解的ESlint配置文件',
@@ -131,8 +131,8 @@ function getSideBar():DefaultTheme.Sidebar {
         link: '/guide/在React项目中使用ESLint'
       },
       {
-        text: '在编辑器中集成Eslint',
-        link: '/guide/在编辑器中集成Eslint'
+        text: '在编辑器中集成ESLint',
+        link: '/guide/在编辑器中集成ESLint'
       }
     ]
   }

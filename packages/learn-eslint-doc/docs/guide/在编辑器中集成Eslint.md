@@ -1,8 +1,8 @@
-# 在编辑器中集成Eslint
+# 在编辑器中集成ESLint
 
-> Eslint可以和很多编辑器非常好的配合，可以在我们dev的时候就能够即使反馈lint信息，这一节我们就讲讲在编辑器中集成Eslint吧～
+> ESLint可以和很多编辑器非常好的配合，可以在我们dev的时候就能够即使反馈lint信息，这一节我们就讲讲在编辑器中集成ESLint吧～
 
-## 在VScode中集成Eslint插件
+## 在VScode中集成ESLint插件
 
 - 在vscode插件市场安装ESLint插件
 
@@ -16,9 +16,9 @@
 
   ![Kapture 2022-07-01 at 08.02.54](https://tva1.sinaimg.cn/large/e6c9d24egy1h3r3p90wuyg213d0u0adp.gif)
 
-## 在WebStorm中集成Eslint插件
+## 在WebStorm中集成ESLint插件
 
-> 由于WebStorm自动集成Eslint，所以我们无需安装
+> 由于WebStorm自动集成ESLint，所以我们无需安装
 
 - 进入webstorm配置ESLint自动修复
 
