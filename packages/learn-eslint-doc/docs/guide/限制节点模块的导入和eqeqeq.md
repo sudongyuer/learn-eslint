@@ -1,15 +1,15 @@
-# 限制节点模块的导入和eqeqeq
+# 限制节点模块的导入和 eqeqeq
 
 > 此篇为实战篇
 
 ## 背景
 
--  通常项目中只能使用一个工具函数库，比如lodash 或者 underscore，但是如果一个项目两个都在使用 必定会造成代码的冗余问题
+-  通常项目中只能使用一个工具函数库，比如 lodash 或者 underscore，但是如果一个项目两个都在使用 必定会造成代码的冗余问题
 - 项目中不允许使用`==`，而是应该使用`===`
 
 ## Coding
 
-需要lint的code
+需要 lint 的 code
 
 ```js
 import lodash from 'lodash'
