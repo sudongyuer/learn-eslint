@@ -1,20 +1,20 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node":true
-    },
-    "root": true,
-    "extends": ["eslint:recommended","airbnb-base","plugin:sudongyuer/sudongyuerConfig"],
-    "plugins": ["promise","eslint-plugin-sudongyuer"],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "noInlineConfig": false,
-    "rules": {
-        "promise/catch-or-return": "error",
-        "import/no-unresolved":0
-        // "semi":[2,"never"],
-    }
+    // "env": {
+    //     "browser": true,
+    //     "es2021": true,
+    //     "node":true
+    // },
+    // "root": true,
+    "extends": ["sudongyuer"]
+    // "plugins": ["promise","eslint-plugin-sudongyuer"],
+    // "parserOptions": {
+    //     "ecmaVersion": "latest",
+    //     "sourceType": "module"
+    // },
+    // "noInlineConfig": false,
+    // "rules": {
+    //     "promise/catch-or-return": "error",
+    //     "import/no-unresolved":0,
+    //     "semi":[2,"never"]
+    // }
 }
