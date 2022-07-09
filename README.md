@@ -11,7 +11,7 @@
 
 ## EsLint 通关小册
 <p align="center">
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h3ilh0a9fzj20m40v0djf.jpg" height="500">
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h40gtshc38j20rs12wael.jpg" height="500">
 </p>
 
 ## 在线地址
