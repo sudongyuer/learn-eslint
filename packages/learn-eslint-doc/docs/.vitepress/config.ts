@@ -25,9 +25,9 @@ export default defineConfig({
     },
     lastUpdatedText:'最后更新',
     algolia: {
-      appId: '8J64VVRP8K',
-      apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-      indexName: 'vitepress'
+      appId: 'B3ZJMMNZBF',
+      apiKey: '577e17bf553f9716a78b840040c54804',
+      indexName: 'learn-eslint'
     },
     footer: {
       message: 'Released under the MIT License.',
