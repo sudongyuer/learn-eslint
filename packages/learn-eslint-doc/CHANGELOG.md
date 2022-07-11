@@ -1,5 +1,11 @@
 # learn-eslint-doc
 
+## 1.0.5
+
+### Patch Changes
+
+- 205176f: 🚀🚀🚀 update algolia
+
 ## 1.0.4
 
 ### Patch Changes
