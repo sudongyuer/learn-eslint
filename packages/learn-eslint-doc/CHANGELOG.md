@@ -1,5 +1,11 @@
 # learn-eslint-doc
 
+## 1.0.4
+
+### Patch Changes
+
+- 6e9d3b4: update logo
+
 ## 1.0.3
 
 ### Patch Changes
