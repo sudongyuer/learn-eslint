@@ -34,7 +34,7 @@
 
   ![image-20220629235957965](https://tva1.sinaimg.cn/large/e6c9d24ely1h3pk3dgf42j20f40auaah.jpg)
 
-- 然后我们只需要在 rules 中书协我们的自定义规则就行啦，这里我就用我们之前小节写的`find-todo`，如果你还不知道如何书写自定义规则，请参考这篇文章 https://sudongyuer.github.io/learn-eslint/guide/%E6%89%BE%E5%88%B0%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84TODO.html
+- 然后我们只需要在 rules 中书写我们的自定义规则就行啦，这里我就用我们之前小节写的`find-todo`，如果你还不知道如何书写自定义规则，请参考这篇文章 https://sudongyuer.github.io/learn-eslint/guide/%E6%89%BE%E5%88%B0%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84TODO.html
 
 <img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h3pk56qedqj20wj0u042q.jpg" alt="image-20220630000142329" style="zoom:33%;" />
 
@@ -42,10 +42,10 @@
 
 <img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h3pk71w4vmj218t0u07a5.jpg" alt="image-20220630000329933" style="zoom:50%;" />
 
-- 这样就算我们边写好了自己的自定义插件
+- 这样就算我们编写好了自己的自定义插件
 - 接下来去其他项目安装并使用，我们去到 eslint-setup 这个项目中去使用一下我们的插件
 
-​	这里我由于使用的 pnpm 所以直接使用 workspace 就可以直接将`eslint-plugin-sudongyeur`这个软链接进入当前项目，方便调试，正	常的话我们应该是将自己写好的插件发布包到 npm，然后在项目去中安装它
+​	这里我由于使用的 pnpm 所以直接使用 workspace 就可以直接将`eslint-plugin-sudongyeur`这个软链接进入当前项目，方便调试，正常的话我们应该是将自己写好的插件发布包到 npm，然后在项目去中安装它
 
 <img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h3pk89mu05j21350u0435.jpg" alt="image-20220630000440000" style="zoom:50%;" />
 
