@@ -79,8 +79,8 @@ function getSideBar():DefaultTheme.Sidebar {
     collapsible: true,
     items:[
       {
-        text: '限制节点模块的导入和eqeqeq',
-        link: '/guide/限制节点模块的导入和eqeqeq'
+        text: '限制模块导入和严格相等',
+        link: '/guide/限制模块导入和严格相等'
       },
       {
         text: '理解抽象语法树AST',
