@@ -16,7 +16,7 @@ Before：
 
 ![image-20220630134331077](https://tva1.sinaimg.cn/large/e6c9d24ely1h3q7w9umkhj20gm0homyj.jpg)
 
-- 在使用插件的地方`extends`插件中定义好的配置，这样我们就可以不用自定在 rules 中书写自定义插件的规则了
+- 在使用插件的地方`extends`插件中定义好的配置，这样我们就可以不用自己在 rules 中书写自定义插件的规则了
 
 ![image-20220630134722950](https://tva1.sinaimg.cn/large/e6c9d24ely1h3q80akkzfj20s20e20u4.jpg)
 
