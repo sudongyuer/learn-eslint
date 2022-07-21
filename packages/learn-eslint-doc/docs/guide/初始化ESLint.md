@@ -68,7 +68,8 @@ yarn run eslint yourfile.js
 }
 ```
 
-在 ESLint 中，名称“semi”和“quote”是规则的名称。第一个值是规则的**错误级别**，可以是下列值之一：
+
+在 ESLint 中，名称“semi”和“quotes”是规则的名称。第一个值是规则的错误级别，可以是下列值之一：
 
 - `off` or `0` - 关闭规则
 - `warn` or `1` - 将规则作为警告（不影响退出代码）
