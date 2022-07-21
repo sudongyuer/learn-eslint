@@ -1,29 +1,31 @@
 # learn-eslint
+![GitHub Repo stars](https://img.shields.io/github/stars/sudongyuer/learn-eslint?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/sudongyuer/learn-eslint)
 
-## 目标
+English | [简体中文](README.zh-CN.md)
 
-- 写一个属于自己的eslint包
-- 为公司整合一个eslint包
+## Target
 
-## 目录结构
+- Write your own `eslint` package
+- Integrate an `eslint` package for the company
 
-- monorepo 管理
+## Directory Structure
 
-## EsLint 通关小册
+- `monorepo` manage
+
+## EsLint clearance Brochure
 <p align="center">
 <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h40gtshc38j20rs12wael.jpg" height="500">
 </p>
 
-## 在线地址
+## Online address
 https://sudongyuer.github.io/learn-eslint/
 
 
-## 你好👋我是速冻鱼🐟 这个小册的作者
+## Hi👋I'm **速冻鱼🐟** Author of this booklet
 
-大家好啊～最近我在学习`ESLint`，想把我的一些学习心得分享给大家，也同时算是我自己的一个知识笔记📒，让大家也能从0到1掌握ESLint，更好的Coding
+Hello～ I'm studying`ESLint`,I would like to share some of my learning experiences with you,It is also my own knowledge note.📒,Let everyone master ESLint from 0 to 1,better coding
 <br>
-您也可以加我`VX:sudongyuer` 和我交流心得
+You can also add me `VX:sudongyuer` to exchange ideas with me
 <br>
-持续更新中 ～ 🚀🚀🚀
-
-
+Continuous update ～ 🚀🚀🚀
