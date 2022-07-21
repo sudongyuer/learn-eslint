@@ -4,7 +4,7 @@
 
 ## 在 VScode 中集成 ESLint 插件
 
-- 在 vscode 插件市场安装 ESLint 插件
+- 在 VScode 插件市场安装 ESLint 插件
 
 ![image-20220701075827099](https://tva1.sinaimg.cn/large/e6c9d24egy1h3r3jjpaxuj212j0u0jxu.jpg)
 
@@ -20,7 +20,7 @@
 
 > 由于 WebStorm 自动集成 ESLint，所以我们无需安装
 
-- 进入 webstorm 配置 ESLint 自动修复
+- 进入 WebStorm 配置 ESLint 自动修复
 
 ![image-20220701081021965](https://tva1.sinaimg.cn/large/e6c9d24egy1h3r3vxs790j215p0u00vk.jpg)
 
