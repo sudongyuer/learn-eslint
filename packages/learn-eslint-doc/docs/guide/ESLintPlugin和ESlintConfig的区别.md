@@ -2,12 +2,12 @@
 
 ## 为什么有 ESLint Plugin 和 ESLint Config
 
-- 当我们写下了很多 ESlint 配置后，如何共享呢？
+- 当我们写下了很多 ESLint 配置后，如何共享呢？
 
 ![image-20220628224557451](https://tva1.sinaimg.cn/large/e6c9d24egy1h3occ28yj8j20ss15cadi.jpg)
 
-- 这时候我们就需要使用 ESlint Config 来共享我们的配置，ESlint Config 就仅仅是一个 JavaScript 对象然后包含了一些配置信息，仅此而已
-- 当我们需要共享一些自定义规则，这时候就需要 ESLint plugin 来帮忙了，一个插件基本上是一个自定义的集合规则，你可以导入和使用。
+- 这时候我们就需要使用 ESLint Config 来共享我们的配置，ESLint Config 就仅仅是一个 JavaScript 对象然后包含了一些配置信息，仅此而已
+- 当我们需要共享一些自定义规则，这时候就需要 ESLint Plugin 来帮忙了，一个插件基本上是一个自定义的集合规则，你可以导入和使用。
 
 ## 举个栗子
 
