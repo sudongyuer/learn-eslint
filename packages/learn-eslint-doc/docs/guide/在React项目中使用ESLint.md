@@ -4,13 +4,13 @@
 
 ## 目标
 
-- 初始化 react 项目
+- 初始化 React 项目
 - 初始化 ESLint
-- 在 react 项目中运行 ESlint
+- 在 React 项目中运行 ESLint
 
 ## Coding
 
-- 使用`pnpm dlx create-react-app ./react-project` 创建 react 项目
+- 使用`pnpm dlx create-react-app ./react-project` 创建 React 项目
 
 ![image-20220701000815553](https://tva1.sinaimg.cn/large/e6c9d24egy1h3qpybcyh7j213a0hy0uf.jpg)
 
