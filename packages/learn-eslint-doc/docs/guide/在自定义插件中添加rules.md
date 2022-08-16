@@ -14,7 +14,7 @@ Before：
 
 - 在插件`index.js`中添加 configs 的自定义规则导出即可
 
-![image-20220630134331077](https://tva1.sinaimg.cn/large/e6c9d24ely1h3q7w9umkhj20gm0homyj.jpg)
+![image-20220630134331077](https://git.poker/sudongyuer/image-bed/blob/master/20220729/image.n9cr2vo84i8.png?raw=true)
 
 - 在使用插件的地方`extends`插件中定义好的配置，这样我们就可以不用自己在 rules 中书写自定义插件的规则了
 
