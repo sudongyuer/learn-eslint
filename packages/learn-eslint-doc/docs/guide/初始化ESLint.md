@@ -1,10 +1,10 @@
 # Getting Started with ESlint
 
-> ESLint 是一个用于识别和报告在 ECMAScript/JavaScript 代码中发现的模式的工具，目的是使代码更加一致和避免 bug。在很多方面，它类似于 JSLint 和 JSHint，只有少数例外
+> ESLint 是一个 ECMAScript/JavaScript 的代码检查工具，用来检查并尽可能的修复您代码中不符合规范的地方。在多人协作中它能使我们编写的代码更加一致，并减少一些错误。
 
 - ESLint 使用 Espree 进行 JavaScript 解析
-- ESLint 使用 AST 来计算代码中的模式
-- ESLint 是完全可插的，每个规则都是一个插件，您可以在运行时添加更多
+- ESLint 使用 AST 来解析用户编写的代码
+- ESLint 是完全可扩展的，每个规则都是一个插件并且您可以在运行时添加更多规则
 
 ## 安装及使用
 
@@ -53,7 +53,7 @@ npx eslint yourfile.js
 yarn run eslint yourfile.js
 ```
 
-还可以在全局而不是本地安装 ESLint （使用 `npm install eslint —— global`)。但是，不建议这样做，而且在这两种情况下，您使用的任何插件或可共享配置都必须在本地安装。
+还可以在全局而不是本地安装 ESLint （使用 `npm install eslint --global`)。但是，不建议这样做，而且在这两种情况下，您使用的任何插件或可共享配置都必须在本地安装。
 
 ## 配置
 
@@ -68,24 +68,23 @@ yarn run eslint yourfile.js
 }
 ```
 
-
-在 ESLint 中，名称“semi”和“quotes”是规则的名称。第一个值是规则的错误级别，可以是下列值之一：
+在 ESLint 中，名称 `“semi”` 和 `“quotes”` 是规则的名称。第一个值是规则的错误级别，可以是下列值之一：
 
 - `off` or `0` - 关闭规则
-- `warn` or `1` - 将规则作为警告（不影响退出代码）
-- `error` or `2` - 将规则作为错误打开（退出代码为 1)
+- `warn` or `1` - 开启规则并作为警告信息（不影响代码运行）
+- `error` or `2` - 开启规则并作为报错信息（影响代码运行）
 
-这三个错误级别允许您对 ESLint 如何应用规则进行细粒度控制（有关更多配置选项和详细信息，请参阅 [configuration docs](https://eslint.org/docs/latest/user-guide/configuring/)）。
+这三个错误级别允许您对 ESLint 应用的规则进行细粒度控制（有关更多配置选项和详细信息，请参阅 [configuration docs](https://eslint.org/docs/latest/user-guide/configuring/)）。
 
 您的`.eslintrc.{ js，yml，json }`配置文件还将包含以下行：
 
-```shell
+```json
 {
-    "extends": "eslint:recommended"
+  "extends": "eslint:recommended"
 }
 ```
 
-因为有了这一行，规则页面上标记为“（推荐）”的所有规则都将被打开。您也可以通过在 npmjs. com 上搜索“eslint-config”引用其他人创建的配置。除非从共享配置进行扩展，或者在配置中显式打开规则，否则 ESLint 将不会对代码进行 lint。
+因为有了这一行，规则页面上标记为“（推荐）”的所有规则都将被打开。您也可以通过在 npmjs.com 上搜索“eslint-config”引用其他人创建的配置。除非从共享配置进行扩展，或者在配置中显式打开规则，否则 ESLint 将不会对代码进行格式化（lint）。
 
 ## 实战小练习
 
