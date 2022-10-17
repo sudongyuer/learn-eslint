@@ -1,5 +1,11 @@
 # learn-eslint-doc
 
+## 2.0.0
+
+### Major Changes
+
+- 8f2428a: 修正机翻带来的不好理解的语义
+
 ## 1.0.5
 
 ### Patch Changes
