@@ -7,3 +7,4 @@ dist
 dist/**
 build/**
 .next/**
+packages/learn-eslint-doc/**
